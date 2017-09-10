@@ -1,0 +1,110 @@
+<nav class="cat__menu-left">
+    <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+        <div class="cat__menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="cat__menu-left__logo">
+        <a [routerLink]="['/']">
+            <img src="assets/modules/dummy-assets/common/img/logo-inverse.png" />
+        </a>
+    </div>
+    <div class="cat__menu-left__inner">
+        <ul class="cat__menu-left__list cat__menu-left__list--root">
+            <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a [routerLink]="['documentation/index']">
+				            <span class="cat__menu-left__icon icmn-users"></span>
+                    Usuarios
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-file-text"></span>
+                    Causas
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['/causa']">
+                            <span class="cat__menu-left__icon">New</span>
+                            Crear
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['/causas']">
+                            <span class="cat__menu-left__icon">All</span>
+                            Ver todas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-library"></span>
+                    Proyectos de Ley
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['/proyectos']">
+                            <span class="cat__menu-left__icon">New</span>
+                            Crear
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['/proyectos']">
+                            <span class="cat__menu-left__icon">All</span>
+                            Ver todas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item cat__menu-left__submenu" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-bubbles3"></span>
+                    Preguntas-Respuestas
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['/']">
+                            <span class="cat__menu-left__icon">New</span>
+                            Crear
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['/preguntas']">
+                            <span class="cat__menu-left__icon">All</span>
+                            Ver todas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a [routerLink]="['documentation/index']">
+				            <span class="cat__menu-left__icon icmn-profile"></span>
+                    Actividad de usuarios
+                </a>
+            </li>
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item cat__menu-left__submenu" [routerLinkActive]="['cat__menu-left__item--active']">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-calendar"></span>
+                    Eventos
+                </a>
+                <ul class="cat__menu-left__list">
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['pages/login-alpha']">
+                            <span class="cat__menu-left__icon">New</span>
+                            Crear
+                        </a>
+                    </li>
+                    <li class="cat__menu-left__item" [routerLinkActive]="['cat__menu-left__item--active']">
+                        <a [routerLink]="['pages/login-beta']">
+                            <span class="cat__menu-left__icon">All</span>
+                            Ver todas
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

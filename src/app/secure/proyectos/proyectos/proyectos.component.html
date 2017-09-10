@@ -1,0 +1,36 @@
+<table class="table table-hover nowrap" id="example1" width="100%">
+    <thead>
+    <tr>
+        <th>Titulo</th>
+        <th>estapa</th>
+        <th>Opciones</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>Titulo</th>
+        <th>etapa</th>
+        <th>Opciones</th>
+    </tr>
+    </tfoot>
+    <tbody>
+        <tr *ngFor="let proyecto of proyectos">
+            <td>{{proyecto.titulo}}</td>
+            <td>{{proyecto.etapa}}</td>
+            <td>
+                <button data-toggle="tooltip" data-placement="top" title="Eliminar" type="button" class="btn btn-icon btn-danger btn-rounded mr-2 mb-2">
+                    <i class="icmn-bin2" aria-hidden="true"></i>
+                </button>
+                <button (click)="toEdit(proyecto.id)"  data-toggle="tooltip" data-placement="top" title="Editar" type="button" class="btn btn-icon btn-info btn-rounded mr-2 mb-2">
+                    <i class="icmn-pencil" aria-hidden="true"></i>
+                </button>
+                <button (click)="toComentario(proyecto.id)" data-toggle="tooltip" data-placement="top" title="Comentarios" type="button" class="btn btn-icon btn-secondary btn-rounded mr-2 mb-2">
+                    <i class="icmn-bubbles3" aria-hidden="true"></i>
+                </button>
+                <button data-toggle="tooltip" data-placement="top" title="Aprobar" type="button" class="btn btn-icon btn-success btn-rounded mr-2 mb-2">
+                    <i class="icmn-clipboard" aria-hidden="true"></i>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

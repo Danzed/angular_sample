@@ -1,0 +1,87 @@
+<nav class="cat__core__top-sidebar cat__core__top-sidebar--bg">
+    <nav class="breadcrumb mb-0">
+        <a class="breadcrumb-item" [routerLink]="['/causas']">Causas</a>
+        <span class="breadcrumb-item active">{{titulo_pagina}}</span>
+    </nav>
+</nav>
+<section class="card">
+    <div class="card-header">
+        <span class="cat__core__title">
+            <strong>{{titulo_pagina}}</strong>
+        </span>
+    </div>
+    <div class="card-block">
+        <div class="row">
+          <div class="col-lg-12">
+                <div class="mb-5">
+                  <div id="example-basic">
+                      <h3>Información general</h3>
+                      <section>
+                          <form>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="l0">Nombre causa</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="Nombre causa" id="l0">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="l13">Categoria</label>
+                                <div class="col-md-9">
+                                    <select class="form-control" id="l13">
+                                        <option *ngFor="let categoria of categorias" [ngValue]="categoria">{{categoria.name}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="l15">Descripción</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" rows="8" id="l15"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                      </section>
+                      <h3>Multimedia</h3>
+                      <section>
+                          <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mb-5">
+                                    <input type="file" class="dropify" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-5">
+                                    <input type="file" class="dropify" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-5">
+                                    <input type="file" class="dropify" />
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mb-5">
+                                    <input type="file" class="dropify" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-5">
+                                    <input type="file" class="dropify" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-5">
+                                    <input type="file" class="dropify" />
+                                </div>
+                            </div>
+                          </div>
+                      </section>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+    </div>
+</section>
